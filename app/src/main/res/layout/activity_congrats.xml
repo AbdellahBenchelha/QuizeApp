@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/congrats_dialog_bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/topPanel"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_congrats" />
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_scrore_bg" />
+
+
+
+            <ProgressBar
+
+                android:id="@+id/circularProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:visibility="invisible"
+                android:progressDrawable="@drawable/circular"
+                android:secondaryProgress="100"
+                />
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:text="0%"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_white"
+                android:textStyle="bold"
+                android:textSize="80sp" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/start_quiz_button_bg"
+        android:text="Start New Quiz"
+        android:textColor="@color/color_white"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

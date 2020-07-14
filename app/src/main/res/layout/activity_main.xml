@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.LoginActivity">
+
+
+    <!--this is the log in page design -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_auth_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="Sign In"
+            android:textColor="@color/color_blue"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp">
+
+            <EditText
+                android:id="@+id/edt_user_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_auth_user"
+                android:drawablePadding="8dp"
+                android:drawableTint="#9E9E9E"
+                android:hint="Login"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textSize="16sp"
+                 />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp">
+
+            <EditText
+                android:id="@+id/edt_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_auth_password"
+                android:drawablePadding="8dp"
+                android:drawableTint="#9E9E9E"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textSize="16sp"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/auth_confirm_button_bg"
+            android:text="Sign In"
+            android:textColor="@color/color_white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?" />
+
+            <TextView
+                android:id="@+id/tv_login_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Sign Up"
+                android:textColor="#04959c" />
+
+
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fb_login_button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            app:cardCornerRadius="8dp"
+            android:textColor="@color/color_white"
+            android:visibility="gone"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/facebook_button_bg"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+               <ImageView
+                     android:layout_width="20dp"
+                     android:layout_height="20dp"
+                     android:scaleType="fitCenter"
+                     android:src="@drawable/ic_facebook"
+                     android:tint="@color/color_white"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:text="Continue with facebook"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gmail_login_button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            app:cardCornerRadius="8dp"
+            android:textColor="@color/color_white"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gmail_button_bg"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_google"
+                    android:tint="@color/color_white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:text="Continue with Google"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

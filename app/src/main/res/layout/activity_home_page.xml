@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!--top section-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#3865F6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top_panel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+
+
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:id="@+id/btn_logout"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:foreground="?selectableItemBackground"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_logout"
+                    android:tint="@color/color_white"
+                    android:scaleType="fitCenter"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp">
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/btn_pick_image"
+                        android:padding="3dp"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:foreground="?selectableItemBackground"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_shadow" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img_edit_profile"
+                            android:src="@drawable/avater" />
+
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tv_home_name"
+                    android:text="Jony Daiking"
+                    android:textColor="@color/color_white"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/tv_home_email"
+                    android:text="jonydaikin45@gmail.com"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <!--leader board recycler view-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_leaderboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_below="@+id/layout_header"
+            android:layout_above="@+id/btn_start_quiz"
+            android:layout_marginTop="3dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_start_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/start_game_button"
+        android:text="Start Play Quiz"
+        android:textColor="@color/color_white"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:id="@+id/progress_activity"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

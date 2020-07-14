@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="API_KEY" translatable="false">AIzaSyAdYl5sPMCD1GC_A4yZsogPLoQo2lv9jSQ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
